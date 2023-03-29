@@ -30,7 +30,6 @@ body {
 }
 
 button {
-  background-color: #ccc;
   border: none;
   padding: 15px;
   border-radius: 5px;
@@ -39,5 +38,25 @@ button {
 }
 
 button:hover {
-  background-color: #bbb;
+  filter: brightness(90%);
+}
+
+/* 數字按鈕顏色 */
+button:not(.operator):not(.clear):not(.equals) {
+  background-color: #d4d5d4;
+}
+
+/* 運算符按鈕顏色 */
+button.operator {
+  background-color: #d87639;
+}
+
+/* 清除按鈕顏色 */
+button.clear {
+  background-color: #b77512;
+}
+
+/* 等於按鈕顏色 */
+button.equals {
+  background-color: #5b5dea;
 }
